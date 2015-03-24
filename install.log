@@ -1,0 +1,742 @@
+mwiget-mba13:opencontrail-cpe3 mwiget$ vagrant up
+Bringing machine 'cpe3' up with 'virtualbox' provider...
+==> cpe3: You assigned a static IP ending in ".1" to this machine.
+==> cpe3: This is very often used by the router and can cause the
+==> cpe3: network to not work properly. If the network doesn't work
+==> cpe3: properly, try changing this IP.
+==> cpe3: Importing base box 'ubuntu/trusty64'...
+==> cpe3: Matching MAC address for NAT networking...
+==> cpe3: You assigned a static IP ending in ".1" to this machine.
+==> cpe3: This is very often used by the router and can cause the
+==> cpe3: network to not work properly. If the network doesn't work
+==> cpe3: properly, try changing this IP.
+==> cpe3: Checking if box 'ubuntu/trusty64' is up to date...
+==> cpe3: Setting the name of the VM: opencontrail-cpe3_cpe3_1427052068983_56886
+==> cpe3: Clearing any previously set forwarded ports...
+==> cpe3: Clearing any previously set network interfaces...
+==> cpe3: Preparing network interfaces based on configuration...
+    cpe3: Adapter 1: nat
+    cpe3: Adapter 2: hostonly
+==> cpe3: Forwarding ports...
+    cpe3: 22 => 2222 (adapter 1)
+==> cpe3: Running 'pre-boot' VM customizations...
+==> cpe3: Booting VM...
+==> cpe3: Waiting for machine to boot. This may take a few minutes...
+    cpe3: SSH address: 127.0.0.1:2222
+    cpe3: SSH username: vagrant
+    cpe3: SSH auth method: private key
+    cpe3: Warning: Connection timeout. Retrying...
+    cpe3: Warning: Remote connection disconnect. Retrying...
+    cpe3:
+    cpe3: Vagrant insecure key detected. Vagrant will automatically replace
+    cpe3: this with a newly generated keypair for better security.
+    cpe3:
+    cpe3: Inserting generated public key within guest...
+    cpe3: Removing insecure key from the guest if its present...
+    cpe3: Key inserted! Disconnecting and reconnecting using new SSH key...
+==> cpe3: Machine booted and ready!
+==> cpe3: Checking for guest additions in VM...
+==> cpe3: Configuring and enabling network interfaces...
+==> cpe3: Mounting shared folders...
+    cpe3: /vagrant => /Users/mwiget/projects/opencontrail-cpe3
+==> cpe3: Running provisioner: shell...
+    cpe3: Running: /var/folders/cf/x7jnnk7x2xvffh3rjlqhsxs0000gw8/T/vagrant-shell20150322-50637-1efknnf.sh
+==> cpe3: stdin: is not a tty
+==> cpe3: Fix ssh to allow password login
+==> cpe3: ssh stop/waiting
+==> cpe3: ssh start/running, process 1942
+==> cpe3: Setting hostname to cpe3
+==> cpe3:
+==> cpe3:
+==> cpe3: %
+==> cpe3:
+==> cpe3: T
+==> cpe3: o
+==> cpe3: t
+==> cpe3: a
+==> cpe3: l
+==> cpe3:
+==> cpe3:
+==> cpe3:
+==> cpe3:
+==> cpe3: %
+==> cpe3:
+==> cpe3: R
+==> cpe3: e
+==> cpe3: c
+==> cpe3: e
+==> cpe3: i
+==> cpe3: v
+==> cpe3: e
+==> cpe3: d
+==> cpe3:
+==> cpe3: %
+==> cpe3:
+==> cpe3: X
+==> cpe3: f
+==> cpe3: e
+==> cpe3: r
+==> cpe3: d
+==> cpe3:
+==> cpe3:
+==> cpe3: A
+==> cpe3: v
+==> cpe3: e
+==> cpe3: r
+==> cpe3: a
+==> cpe3: g
+==> cpe3: e Speed   Time    Time     Time  Current
+==> cpe3:                                  Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+==> cpe3:
+==> cpe3:
+==> cpe3: 0
+==> cpe3:
+==> cpe3:
+==> cpe3:
+==> cpe3:
+==> cpe3:
+==> cpe3: 0
+==> cpe3:
+==> cpe3:    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0
+  0     0    0     0    0     0      0      0 --:--:--  0:00:02 --:--:--     0
+  0     0    0     0    0     0      0      0 --:--:--  0:00:03 --:--:--     0
+  0     0    0     0    0     0      0      0 --:--:--  0:00:04 --:--:--     0
+==> cpe3:   0     0    0     0    0     0      0      0 --:--:--  0:00:05 --:--:--     0
+100  1772  100  1772    0     0    292      0  0:00:06  0:00:06 --:--:--   500-:--   390
+==> cpe3: OK
+==> cpe3: apt-get update ...
+==> cpe3: installing openvpn client
+==> cpe3: Reading package lists...
+==> cpe3: Building dependency tree...
+==> cpe3: Reading state information...
+==> cpe3: The following extra packages will be installed:
+==> cpe3:   liblzo2-2 libpkcs11-helper1
+==> cpe3: Suggested packages:
+==> cpe3:   easy-rsa
+==> cpe3: The following NEW packages will be installed:
+==> cpe3:   bridge-utils liblzo2-2 libpkcs11-helper1 openvpn
+==> cpe3: 0 upgraded, 4 newly installed, 0 to remove and 16 not upgraded.
+==> cpe3: Need to get 507 kB of archives.
+==> cpe3: After this operation, 1,492 kB of additional disk space will be used.
+==> cpe3: Get:1 http://archive.ubuntu.com/ubuntu/ trusty-updates/main liblzo2-2 amd64 2.06-1.2ubuntu1.1 [46.1 kB]
+==> cpe3: Get:2 http://archive.ubuntu.com/ubuntu/ trusty/main libpkcs11-helper1 amd64 1.11-1 [42.2 kB]
+==> cpe3: Get:3 http://archive.ubuntu.com/ubuntu/ trusty/main bridge-utils amd64 1.5-6ubuntu2 [29.2 kB]
+==> cpe3: Get:4 http://archive.ubuntu.com/ubuntu/ trusty-updates/main openvpn amd64 2.3.2-7ubuntu3.1 [390 kB]
+==> cpe3: dpkg-preconfigure: unable to re-open stdin: No such file or directory
+==> cpe3: Fetched 507 kB in 6s (79.3 kB/s)
+==> cpe3: Selecting previously unselected package liblzo2-2:amd64.
+==> cpe3: (Reading database ... 60969 files and directories currently installed.)
+==> cpe3: Preparing to unpack .../liblzo2-2_2.06-1.2ubuntu1.1_amd64.deb ...
+==> cpe3: Unpacking liblzo2-2:amd64 (2.06-1.2ubuntu1.1) ...
+==> cpe3: Selecting previously unselected package libpkcs11-helper1:amd64.
+==> cpe3: Preparing to unpack .../libpkcs11-helper1_1.11-1_amd64.deb ...
+==> cpe3: Unpacking libpkcs11-helper1:amd64 (1.11-1) ...
+==> cpe3: Selecting previously unselected package bridge-utils.
+==> cpe3: Preparing to unpack .../bridge-utils_1.5-6ubuntu2_amd64.deb ...
+==> cpe3: Unpacking bridge-utils (1.5-6ubuntu2) ...
+==> cpe3: Selecting previously unselected package openvpn.
+==> cpe3: Preparing to unpack .../openvpn_2.3.2-7ubuntu3.1_amd64.deb ...
+==> cpe3: Unpacking openvpn (2.3.2-7ubuntu3.1) ...
+==> cpe3: Processing triggers for man-db (2.6.7.1-1ubuntu1) ...
+==> cpe3: Processing triggers for ureadahead (0.100.0-16) ...
+==> cpe3: Setting up liblzo2-2:amd64 (2.06-1.2ubuntu1.1) ...
+==> cpe3: Setting up libpkcs11-helper1:amd64 (1.11-1) ...
+==> cpe3: Setting up bridge-utils (1.5-6ubuntu2) ...
+==> cpe3: Setting up openvpn (2.3.2-7ubuntu3.1) ...
+==> cpe3:  * Restarting virtual private network daemon(s)...
+==> cpe3:  *   No VPN is running.
+==> cpe3: Processing triggers for libc-bin (2.19-0ubuntu6.6) ...
+==> cpe3: Processing triggers for ureadahead (0.100.0-16) ...
+==> cpe3: net.ipv4.ip_forward = 1
+==> cpe3: starting openvpn client
+==> cpe3:  * Starting virtual private network daemon(s)...
+==> cpe3:  *   Autostarting VPN 'client'
+==> cpe3: Reading package lists...
+==> cpe3: Building dependency tree...
+==> cpe3: Reading state information...
+==> cpe3: The following extra packages will be installed:
+==> cpe3:   build-essential contrail-lib contrail-vrouter-utils dpkg-dev g++ g++-4.8
+==> cpe3:   ifenslave ifenslave-2.6 libalgorithm-diff-perl libalgorithm-diff-xs-perl
+==> cpe3:   libalgorithm-merge-perl libdpkg-perl libfile-fcntllock-perl libicu48
+==> cpe3:   libjs-sphinxdoc libjs-underscore libstdc++-4.8-dev libxslt1.1
+==> cpe3:   python-backports.ssl-match-hostname python-bitarray python-bottle
+==> cpe3:   python-certifi python-colorama python-contrail python-contrail-vrouter-api
+==> cpe3:   python-distlib python-eventlet python-gevent python-geventhttpclient
+==> cpe3:   python-greenlet python-html5lib python-iniparse python-lxml python-meld3
+==> cpe3:   python-netaddr python-netifaces python-opencontrail-vrouter-netns python-pip
+==> cpe3:   python-psutil python-pycassa python-setuptools python-thrift supervisor vlan
+==> cpe3: Suggested packages:
+==> cpe3:   debian-keyring g++-multilib g++-4.8-multilib gcc-4.8-doc libstdc++6-4.8-dbg
+==> cpe3:   javascript-common libstdc++-4.8-doc python-gevent-doc python-gevent-dbg
+==> cpe3:   python-greenlet-doc python-greenlet-dev python-greenlet-dbg python-genshi
+==> cpe3:   python-lxml-dbg ipython python-netaddr-docs
+==> cpe3: Recommended packages:
+==> cpe3:   python-dev-all
+==> cpe3: The following NEW packages will be installed:
+==> cpe3:   build-essential contrail-lib contrail-nodemgr contrail-setup contrail-utils
+==> cpe3:   contrail-vrouter-agent contrail-vrouter-dkms contrail-vrouter-init
+==> cpe3:   contrail-vrouter-utils dpkg-dev g++ g++-4.8 ifenslave ifenslave-2.6
+==> cpe3:   libalgorithm-diff-perl libalgorithm-diff-xs-perl libalgorithm-merge-perl
+==> cpe3:   libdpkg-perl libfile-fcntllock-perl libicu48 libjs-sphinxdoc
+==> cpe3:   libjs-underscore libstdc++-4.8-dev libxslt1.1
+==> cpe3:   python-backports.ssl-match-hostname python-bitarray python-bottle
+==> cpe3:   python-certifi python-colorama python-contrail python-contrail-vrouter-api
+==> cpe3:   python-distlib python-eventlet python-gevent python-geventhttpclient
+==> cpe3:   python-greenlet python-html5lib python-iniparse python-lxml python-meld3
+==> cpe3:   python-netaddr python-netifaces python-opencontrail-vrouter-netns python-pip
+==> cpe3:   python-psutil python-pycassa python-setuptools python-thrift supervisor vlan
+==> cpe3: 0 upgraded, 50 newly installed, 0 to remove and 16 not upgraded.
+==> cpe3: Need to get 28.9 MB of archives.
+==> cpe3: After this operation, 103 MB of additional disk space will be used.
+==> cpe3: Get:1 http://ubuntu-repo.opencontrail.org.s3-website-us-east-1.amazonaws.com/ opencontrail-stock-ubuntu1404-icehouse/main python-backports.ssl-match-hostname all 3.4.0.2-1contrail1 [6,948 B]
+==> cpe3: Get:2 http://archive.ubuntu.com/ubuntu/ trusty/main libxslt1.1 amd64 1.1.28-2build1 [145 kB]
+==> cpe3: Get:3 http://ubuntu-repo.opencontrail.org.s3-website-us-east-1.amazonaws.com/ opencontrail-stock-ubuntu1404-icehouse/main python-certifi all 1.0.1-1contrail1 [170 kB]
+==> cpe3: Get:4 http://archive.ubuntu.com/ubuntu/ trusty/main libstdc++-4.8-dev amd64 4.8.2-19ubuntu1 [1,050 kB]
+==> cpe3: Get:5 http://ubuntu-repo.opencontrail.org.s3-website-us-east-1.amazonaws.com/ opencontrail-stock-ubuntu1404-icehouse/main libicu48 amd64 4.8.1.1-3 [8,103 kB]
+==> cpe3: Get:6 http://archive.ubuntu.com/ubuntu/ trusty/main g++-4.8 amd64 4.8.2-19ubuntu1 [7,038 kB]
+==> cpe3: Get:7 http://archive.ubuntu.com/ubuntu/ trusty/main g++ amd64 4:4.8.2-1ubuntu6 [1,490 B]
+==> cpe3: Get:8 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libdpkg-perl all 1.17.5ubuntu5.3 [179 kB]
+==> cpe3: Get:9 http://archive.ubuntu.com/ubuntu/ trusty-updates/main dpkg-dev all 1.17.5ubuntu5.3 [726 kB]
+==> cpe3: Get:10 http://archive.ubuntu.com/ubuntu/ trusty/main build-essential amd64 11.6ubuntu6 [4,838 B]
+==> cpe3: Get:11 http://archive.ubuntu.com/ubuntu/ trusty/universe python-bottle all 0.12.0-1 [40.1 kB]
+==> cpe3: Get:12 http://archive.ubuntu.com/ubuntu/ trusty/main python-greenlet amd64 0.4.2-1build1 [16.7 kB]
+==> cpe3: Get:13 http://archive.ubuntu.com/ubuntu/ trusty/main python-gevent amd64 1.0-1ubuntu1 [215 kB]
+==> cpe3: Get:14 http://archive.ubuntu.com/ubuntu/ trusty/main python-psutil amd64 1.2.1-1ubuntu2 [50.2 kB]
+==> cpe3: Get:15 http://archive.ubuntu.com/ubuntu/ trusty/main python-thrift amd64 0.9.0-1build1 [30.8 kB]
+==> cpe3: Get:16 http://archive.ubuntu.com/ubuntu/ trusty-updates/main python-lxml amd64 3.3.3-1ubuntu0.1 [629 kB]
+==> cpe3: Get:17 http://archive.ubuntu.com/ubuntu/ trusty/main libjs-underscore all 1.4.4-2ubuntu1 [45.6 kB]
+==> cpe3: Get:18 http://archive.ubuntu.com/ubuntu/ trusty-updates/main libjs-sphinxdoc all 1.2.2+dfsg-1ubuntu1.1 [41.4 kB]
+==> cpe3: Get:19 http://archive.ubuntu.com/ubuntu/ trusty/main python-eventlet all 0.13.0-1ubuntu2 [202 kB]
+==> cpe3: Get:20 http://archive.ubuntu.com/ubuntu/ trusty-updates/main python-netaddr all 0.7.10-1ubuntu1.1 [849 kB]
+==> cpe3: Get:21 http://archive.ubuntu.com/ubuntu/ trusty/universe python-meld3 amd64 0.6.10-1 [39.0 kB]
+==> cpe3: Get:22 http://archive.ubuntu.com/ubuntu/ trusty/main ifenslave all 2.4ubuntu1 [12.9 kB]
+==> cpe3: Get:23 http://archive.ubuntu.com/ubuntu/ trusty/main ifenslave-2.6 all 2.4ubuntu1 [1,642 B]
+==> cpe3: Get:24 http://archive.ubuntu.com/ubuntu/ trusty/main libalgorithm-diff-perl all 1.19.02-3 [50.0 kB]
+==> cpe3: Get:25 http://archive.ubuntu.com/ubuntu/ trusty/main libalgorithm-diff-xs-perl amd64 0.04-2build4 [12.6 kB]
+==> cpe3: Get:26 http://archive.ubuntu.com/ubuntu/ trusty/main libalgorithm-merge-perl all 0.08-2 [12.7 kB]
+==> cpe3: Get:27 http://archive.ubuntu.com/ubuntu/ trusty/main libfile-fcntllock-perl amd64 0.14-2build1 [15.9 kB]
+==> cpe3: Get:28 http://archive.ubuntu.com/ubuntu/ trusty/universe python-colorama all 0.2.5-0.1ubuntu1 [18.3 kB]
+==> cpe3: Get:29 http://archive.ubuntu.com/ubuntu/ trusty/universe python-distlib all 0.1.8-1 [113 kB]
+==> cpe3: Get:30 http://archive.ubuntu.com/ubuntu/ trusty/main python-html5lib all 0.999-2 [83.2 kB]
+==> cpe3: Get:31 http://archive.ubuntu.com/ubuntu/ trusty/main python-netifaces amd64 0.8-3build1 [11.3 kB]
+==> cpe3: Get:32 http://archive.ubuntu.com/ubuntu/ trusty/main python-setuptools all 3.3-1ubuntu1 [230 kB]
+==> cpe3: Get:33 http://archive.ubuntu.com/ubuntu/ trusty/universe python-pip all 1.5.4-1 [97.7 kB]
+==> cpe3: Get:34 http://archive.ubuntu.com/ubuntu/ trusty/main vlan amd64 1.9-3ubuntu10 [30.3 kB]
+==> cpe3: Get:35 http://archive.ubuntu.com/ubuntu/ trusty/universe python-iniparse all 0.4-2.1build1 [21.5 kB]
+==> cpe3: Get:36 http://ubuntu-repo.opencontrail.org.s3-website-us-east-1.amazonaws.com/opencontrail-r200-icehouse/ opencontrail-r200-icehouse/main contrail-lib amd64 2.0-22 [1,376 kB]
+==> cpe3: Get:37 http://ubuntu-repo.opencontrail.org.s3-website-us-east-1.amazonaws.com/ opencontrail-stock-ubuntu1404-icehouse/main python-bitarray amd64 0.8.0-2contrail1 [68.6 kB]
+==> cpe3: Get:38 http://ubuntu-repo.opencontrail.org.s3-website-us-east-1.amazonaws.com/ opencontrail-stock-ubuntu1404-icehouse/main python-geventhttpclient amd64 1.1.0-1contrail1 [145 kB]
+==> cpe3: Get:39 http://ubuntu-repo.opencontrail.org.s3-website-us-east-1.amazonaws.com/ opencontrail-stock-ubuntu1404-icehouse/main python-pycassa all 1.11.0-1contrail2 [95.2 kB]
+==> cpe3: Get:40 http://ubuntu-repo.opencontrail.org.s3-website-us-east-1.amazonaws.com/opencontrail-r200-icehouse/ opencontrail-r200-icehouse/main python-contrail all 2.0-22 [466 kB]
+==> cpe3: Get:41 http://ubuntu-repo.opencontrail.org.s3-website-us-east-1.amazonaws.com/opencontrail-r200-icehouse/ opencontrail-r200-icehouse/main contrail-utils amd64 2.0-22 [45.2 kB]
+==> cpe3: Get:42 http://ubuntu-repo.opencontrail.org.s3-website-us-east-1.amazonaws.com/opencontrail-r200-icehouse/ opencontrail-r200-icehouse/main contrail-vrouter-utils amd64 2.0-22 [286 kB]
+==> cpe3: Get:43 http://ubuntu-repo.opencontrail.org.s3-website-us-east-1.amazonaws.com/opencontrail-r200-icehouse/ opencontrail-r200-icehouse/main python-contrail-vrouter-api all 2.0-22 [13.9 kB]
+==> cpe3: Get:44 http://ubuntu-repo.opencontrail.org.s3-website-us-east-1.amazonaws.com/opencontrail-r200-icehouse/ opencontrail-r200-icehouse/main python-opencontrail-vrouter-netns amd64 2.0-22 [13.1 kB]
+==> cpe3: Get:45 http://ubuntu-repo.opencontrail.org.s3-website-us-east-1.amazonaws.com/opencontrail-r200-icehouse/ opencontrail-r200-icehouse/main contrail-vrouter-dkms all 2.0-22 [166 kB]
+==> cpe3: Get:46 http://ubuntu-repo.opencontrail.org.s3-website-us-east-1.amazonaws.com/ opencontrail-stock-ubuntu1404-icehouse/main supervisor all 3.0r1-1 [244 kB]
+==> cpe3: Get:47 http://ubuntu-repo.opencontrail.org.s3-website-us-east-1.amazonaws.com/opencontrail-r200-icehouse/ opencontrail-r200-icehouse/main contrail-vrouter-agent amd64 2.0-22 [4,848 kB]
+==> cpe3: Get:48 http://ubuntu-repo.opencontrail.org.s3-website-us-east-1.amazonaws.com/opencontrail-r200-icehouse/ opencontrail-r200-icehouse/main contrail-vrouter-init all 2.0-22 [5,246 B]
+==> cpe3: Get:49 http://ubuntu-repo.opencontrail.org.s3-website-us-east-1.amazonaws.com/opencontrail-r200-icehouse/ opencontrail-r200-icehouse/main contrail-nodemgr all 2.0-22 [272 kB]
+==> cpe3: Get:50 http://ubuntu-repo.opencontrail.org.s3-website-us-east-1.amazonaws.com/opencontrail-r200-icehouse/ opencontrail-r200-icehouse/main contrail-setup all 2.0-22 [573 kB]
+==> cpe3: dpkg-preconfigure: unable to re-open stdin: No such file or directory
+==> cpe3: Fetched 28.9 MB in 1min 57s (247 kB/s)
+==> cpe3: Selecting previously unselected package libxslt1.1:amd64.
+==> cpe3: (Reading database ... 61079 files and directories currently installed.)
+==> cpe3: Preparing to unpack .../libxslt1.1_1.1.28-2build1_amd64.deb ...
+==> cpe3: Unpacking libxslt1.1:amd64 (1.1.28-2build1) ...
+==> cpe3: Selecting previously unselected package python-backports.ssl-match-hostname.
+==> cpe3: Preparing to unpack .../python-backports.ssl-match-hostname_3.4.0.2-1contrail1_all.deb ...
+==> cpe3: Unpacking python-backports.ssl-match-hostname (3.4.0.2-1contrail1) ...
+==> cpe3: Selecting previously unselected package python-certifi.
+==> cpe3: Preparing to unpack .../python-certifi_1.0.1-1contrail1_all.deb ...
+==> cpe3: Unpacking python-certifi (1.0.1-1contrail1) ...
+==> cpe3: Selecting previously unselected package libstdc++-4.8-dev:amd64.
+==> cpe3: Preparing to unpack .../libstdc++-4.8-dev_4.8.2-19ubuntu1_amd64.deb ...
+==> cpe3: Unpacking libstdc++-4.8-dev:amd64 (4.8.2-19ubuntu1) ...
+==> cpe3: Selecting previously unselected package g++-4.8.
+==> cpe3: Preparing to unpack .../g++-4.8_4.8.2-19ubuntu1_amd64.deb ...
+==> cpe3: Unpacking g++-4.8 (4.8.2-19ubuntu1) ...
+==> cpe3: Selecting previously unselected package g++.
+==> cpe3: Preparing to unpack .../g++_4%3a4.8.2-1ubuntu6_amd64.deb ...
+==> cpe3: Unpacking g++ (4:4.8.2-1ubuntu6) ...
+==> cpe3: Selecting previously unselected package libdpkg-perl.
+==> cpe3: Preparing to unpack .../libdpkg-perl_1.17.5ubuntu5.3_all.deb ...
+==> cpe3: Unpacking libdpkg-perl (1.17.5ubuntu5.3) ...
+==> cpe3: Selecting previously unselected package dpkg-dev.
+==> cpe3: Preparing to unpack .../dpkg-dev_1.17.5ubuntu5.3_all.deb ...
+==> cpe3: Unpacking dpkg-dev (1.17.5ubuntu5.3) ...
+==> cpe3: Selecting previously unselected package build-essential.
+==> cpe3: Preparing to unpack .../build-essential_11.6ubuntu6_amd64.deb ...
+==> cpe3: Unpacking build-essential (11.6ubuntu6) ...
+==> cpe3: Selecting previously unselected package libicu48.
+==> cpe3: Preparing to unpack .../libicu48_4.8.1.1-3_amd64.deb ...
+==> cpe3: Unpacking libicu48 (4.8.1.1-3) ...
+==> cpe3: Selecting previously unselected package contrail-lib.
+==> cpe3: Preparing to unpack .../contrail-lib_2.0-22_amd64.deb ...
+==> cpe3: Unpacking contrail-lib (2.0-22) ...
+==> cpe3: Selecting previously unselected package python-bottle.
+==> cpe3: Preparing to unpack .../python-bottle_0.12.0-1_all.deb ...
+==> cpe3: Unpacking python-bottle (0.12.0-1) ...
+==> cpe3: Selecting previously unselected package python-greenlet.
+==> cpe3: Preparing to unpack .../python-greenlet_0.4.2-1build1_amd64.deb ...
+==> cpe3: Unpacking python-greenlet (0.4.2-1build1) ...
+==> cpe3: Selecting previously unselected package python-gevent.
+==> cpe3: Preparing to unpack .../python-gevent_1.0-1ubuntu1_amd64.deb ...
+==> cpe3: Unpacking python-gevent (1.0-1ubuntu1) ...
+==> cpe3: Selecting previously unselected package python-bitarray.
+==> cpe3: Preparing to unpack .../python-bitarray_0.8.0-2contrail1_amd64.deb ...
+==> cpe3: Unpacking python-bitarray (0.8.0-2contrail1) ...
+==> cpe3: Selecting previously unselected package python-geventhttpclient.
+==> cpe3: Preparing to unpack .../python-geventhttpclient_1.1.0-1contrail1_amd64.deb ...
+==> cpe3: Unpacking python-geventhttpclient (1.1.0-1contrail1) ...
+==> cpe3: Selecting previously unselected package python-psutil.
+==> cpe3: Preparing to unpack .../python-psutil_1.2.1-1ubuntu2_amd64.deb ...
+==> cpe3: Unpacking python-psutil (1.2.1-1ubuntu2) ...
+==> cpe3: Selecting previously unselected package python-thrift.
+==> cpe3: Preparing to unpack .../python-thrift_0.9.0-1build1_amd64.deb ...
+==> cpe3: Unpacking python-thrift (0.9.0-1build1) ...
+==> cpe3: Selecting previously unselected package python-pycassa.
+==> cpe3: Preparing to unpack .../python-pycassa_1.11.0-1contrail2_all.deb ...
+==> cpe3: Unpacking python-pycassa (1.11.0-1contrail2) ...
+==> cpe3: Selecting previously unselected package python-contrail.
+==> cpe3: Preparing to unpack .../python-contrail_2.0-22_all.deb ...
+==> cpe3: Unpacking python-contrail (2.0-22) ...
+==> cpe3: Selecting previously unselected package python-lxml.
+==> cpe3: Preparing to unpack .../python-lxml_3.3.3-1ubuntu0.1_amd64.deb ...
+==> cpe3: Unpacking python-lxml (3.3.3-1ubuntu0.1) ...
+==> cpe3: Selecting previously unselected package contrail-utils.
+==> cpe3: Preparing to unpack .../contrail-utils_2.0-22_amd64.deb ...
+==> cpe3: Unpacking contrail-utils (2.0-22) ...
+==> cpe3: Selecting previously unselected package contrail-vrouter-utils.
+==> cpe3: Preparing to unpack .../contrail-vrouter-utils_2.0-22_amd64.deb ...
+==> cpe3: Unpacking contrail-vrouter-utils (2.0-22) ...
+==> cpe3: Selecting previously unselected package libjs-underscore.
+==> cpe3: Preparing to unpack .../libjs-underscore_1.4.4-2ubuntu1_all.deb ...
+==> cpe3: Unpacking libjs-underscore (1.4.4-2ubuntu1) ...
+==> cpe3: Selecting previously unselected package libjs-sphinxdoc.
+==> cpe3: Preparing to unpack .../libjs-sphinxdoc_1.2.2+dfsg-1ubuntu1.1_all.deb ...
+==> cpe3: Unpacking libjs-sphinxdoc (1.2.2+dfsg-1ubuntu1.1) ...
+==> cpe3: Selecting previously unselected package python-eventlet.
+==> cpe3: Preparing to unpack .../python-eventlet_0.13.0-1ubuntu2_all.deb ...
+==> cpe3: Unpacking python-eventlet (0.13.0-1ubuntu2) ...
+==> cpe3: Selecting previously unselected package python-netaddr.
+==> cpe3: Preparing to unpack .../python-netaddr_0.7.10-1ubuntu1.1_all.deb ...
+==> cpe3: Unpacking python-netaddr (0.7.10-1ubuntu1.1) ...
+==> cpe3: Selecting previously unselected package python-contrail-vrouter-api.
+==> cpe3: Preparing to unpack .../python-contrail-vrouter-api_2.0-22_all.deb ...
+==> cpe3: Unpacking python-contrail-vrouter-api (2.0-22) ...
+==> cpe3: Selecting previously unselected package python-opencontrail-vrouter-netns.
+==> cpe3: Preparing to unpack .../python-opencontrail-vrouter-netns_2.0-22_amd64.deb ...
+==> cpe3: Unpacking python-opencontrail-vrouter-netns (2.0-22) ...
+==> cpe3: Selecting previously unselected package contrail-vrouter-dkms.
+==> cpe3: Preparing to unpack .../contrail-vrouter-dkms_2.0-22_all.deb ...
+==> cpe3: Unpacking contrail-vrouter-dkms (2.0-22) ...
+==> cpe3: Selecting previously unselected package python-meld3.
+==> cpe3: Preparing to unpack .../python-meld3_0.6.10-1_amd64.deb ...
+==> cpe3: Unpacking python-meld3 (0.6.10-1) ...
+==> cpe3: Selecting previously unselected package supervisor.
+==> cpe3: Preparing to unpack .../supervisor_3.0r1-1_all.deb ...
+==> cpe3: Unpacking supervisor (3.0r1-1) ...
+==> cpe3: Selecting previously unselected package contrail-vrouter-agent.
+==> cpe3: Preparing to unpack .../contrail-vrouter-agent_2.0-22_amd64.deb ...
+==> cpe3: Unpacking contrail-vrouter-agent (2.0-22) ...
+==> cpe3: Selecting previously unselected package contrail-vrouter-init.
+==> cpe3: Preparing to unpack .../contrail-vrouter-init_2.0-22_all.deb ...
+==> cpe3: Unpacking contrail-vrouter-init (2.0-22) ...
+==> cpe3: Selecting previously unselected package ifenslave.
+==> cpe3: Preparing to unpack .../ifenslave_2.4ubuntu1_all.deb ...
+==> cpe3: Unpacking ifenslave (2.4ubuntu1) ...
+==> cpe3: Selecting previously unselected package ifenslave-2.6.
+==> cpe3: Preparing to unpack .../ifenslave-2.6_2.4ubuntu1_all.deb ...
+==> cpe3: Unpacking ifenslave-2.6 (2.4ubuntu1) ...
+==> cpe3: Selecting previously unselected package libalgorithm-diff-perl.
+==> cpe3: Preparing to unpack .../libalgorithm-diff-perl_1.19.02-3_all.deb ...
+==> cpe3: Unpacking libalgorithm-diff-perl (1.19.02-3) ...
+==> cpe3: Selecting previously unselected package libalgorithm-diff-xs-perl.
+==> cpe3: Preparing to unpack .../libalgorithm-diff-xs-perl_0.04-2build4_amd64.deb ...
+==> cpe3: Unpacking libalgorithm-diff-xs-perl (0.04-2build4) ...
+==> cpe3: Selecting previously unselected package libalgorithm-merge-perl.
+==> cpe3: Preparing to unpack .../libalgorithm-merge-perl_0.08-2_all.deb ...
+==> cpe3: Unpacking libalgorithm-merge-perl (0.08-2) ...
+==> cpe3: Selecting previously unselected package libfile-fcntllock-perl.
+==> cpe3: Preparing to unpack .../libfile-fcntllock-perl_0.14-2build1_amd64.deb ...
+==> cpe3: Unpacking libfile-fcntllock-perl (0.14-2build1) ...
+==> cpe3: Selecting previously unselected package python-colorama.
+==> cpe3: Preparing to unpack .../python-colorama_0.2.5-0.1ubuntu1_all.deb ...
+==> cpe3: Unpacking python-colorama (0.2.5-0.1ubuntu1) ...
+==> cpe3: Selecting previously unselected package python-distlib.
+==> cpe3: Preparing to unpack .../python-distlib_0.1.8-1_all.deb ...
+==> cpe3: Unpacking python-distlib (0.1.8-1) ...
+==> cpe3: Selecting previously unselected package python-html5lib.
+==> cpe3: Preparing to unpack .../python-html5lib_0.999-2_all.deb ...
+==> cpe3: Unpacking python-html5lib (0.999-2) ...
+==> cpe3: Selecting previously unselected package python-netifaces.
+==> cpe3: Preparing to unpack .../python-netifaces_0.8-3build1_amd64.deb ...
+==> cpe3: Unpacking python-netifaces (0.8-3build1) ...
+==> cpe3: Selecting previously unselected package python-setuptools.
+==> cpe3: Preparing to unpack .../python-setuptools_3.3-1ubuntu1_all.deb ...
+==> cpe3: Unpacking python-setuptools (3.3-1ubuntu1) ...
+==> cpe3: Selecting previously unselected package python-pip.
+==> cpe3: Preparing to unpack .../python-pip_1.5.4-1_all.deb ...
+==> cpe3: Unpacking python-pip (1.5.4-1) ...
+==> cpe3: Selecting previously unselected package contrail-nodemgr.
+==> cpe3: Preparing to unpack .../contrail-nodemgr_2.0-22_all.deb ...
+==> cpe3: Unpacking contrail-nodemgr (2.0-22) ...
+==> cpe3: Selecting previously unselected package vlan.
+==> cpe3: Preparing to unpack .../vlan_1.9-3ubuntu10_amd64.deb ...
+==> cpe3: Unpacking vlan (1.9-3ubuntu10) ...
+==> cpe3: Selecting previously unselected package python-iniparse.
+==> cpe3: Preparing to unpack .../python-iniparse_0.4-2.1build1_all.deb ...
+==> cpe3: Unpacking python-iniparse (0.4-2.1build1) ...
+==> cpe3: Selecting previously unselected package contrail-setup.
+==> cpe3: Preparing to unpack .../contrail-setup_2.0-22_all.deb ...
+==> cpe3: Unpacking contrail-setup (2.0-22) ...
+==> cpe3: Processing triggers for man-db (2.6.7.1-1ubuntu1) ...
+==> cpe3: Processing triggers for ureadahead (0.100.0-16) ...
+==> cpe3: Setting up libxslt1.1:amd64 (1.1.28-2build1) ...
+==> cpe3: Setting up python-backports.ssl-match-hostname (3.4.0.2-1contrail1) ...
+==> cpe3: Setting up python-certifi (1.0.1-1contrail1) ...
+==> cpe3: Setting up libstdc++-4.8-dev:amd64 (4.8.2-19ubuntu1) ...
+==> cpe3: Setting up g++-4.8 (4.8.2-19ubuntu1) ...
+==> cpe3: Setting up g++ (4:4.8.2-1ubuntu6) ...
+==> cpe3: update-alternatives:
+==> cpe3: using /usr/bin/g++ to provide /usr/bin/c++ (c++) in auto mode
+==> cpe3: Setting up libdpkg-perl (1.17.5ubuntu5.3) ...
+==> cpe3: Setting up dpkg-dev (1.17.5ubuntu5.3) ...
+==> cpe3: Setting up build-essential (11.6ubuntu6) ...
+==> cpe3: Setting up libicu48 (4.8.1.1-3) ...
+==> cpe3: Setting up contrail-lib (2.0-22) ...
+==> cpe3: Setting up python-bottle (0.12.0-1) ...
+==> cpe3: Setting up python-greenlet (0.4.2-1build1) ...
+==> cpe3: Setting up python-gevent (1.0-1ubuntu1) ...
+==> cpe3: Setting up python-bitarray (0.8.0-2contrail1) ...
+==> cpe3: Setting up python-geventhttpclient (1.1.0-1contrail1) ...
+==> cpe3: Setting up python-psutil (1.2.1-1ubuntu2) ...
+==> cpe3: Setting up python-thrift (0.9.0-1build1) ...
+==> cpe3: Setting up python-pycassa (1.11.0-1contrail2) ...
+==> cpe3: Setting up python-contrail (2.0-22) ...
+==> cpe3: Setting up python-lxml (3.3.3-1ubuntu0.1) ...
+==> cpe3: Setting up contrail-utils (2.0-22) ...
+==> cpe3: Setting up contrail-vrouter-utils (2.0-22) ...
+==> cpe3: Setting up libjs-underscore (1.4.4-2ubuntu1) ...
+==> cpe3: Setting up libjs-sphinxdoc (1.2.2+dfsg-1ubuntu1.1) ...
+==> cpe3: Setting up python-eventlet (0.13.0-1ubuntu2) ...
+==> cpe3: Setting up python-netaddr (0.7.10-1ubuntu1.1) ...
+==> cpe3: Setting up python-meld3 (0.6.10-1) ...
+==> cpe3: Setting up supervisor (3.0r1-1) ...
+==> cpe3: Starting supervisor:
+==> cpe3: supervisord.
+==> cpe3: Setting up ifenslave (2.4ubuntu1) ...
+==> cpe3: Setting up ifenslave-2.6 (2.4ubuntu1) ...
+==> cpe3: Setting up libalgorithm-diff-perl (1.19.02-3) ...
+==> cpe3: Setting up libalgorithm-diff-xs-perl (0.04-2build4) ...
+==> cpe3: Setting up libalgorithm-merge-perl (0.08-2) ...
+==> cpe3: Setting up libfile-fcntllock-perl (0.14-2build1) ...
+==> cpe3: Setting up python-colorama (0.2.5-0.1ubuntu1) ...
+==> cpe3: Setting up python-distlib (0.1.8-1) ...
+==> cpe3: Setting up python-html5lib (0.999-2) ...
+==> cpe3: Setting up python-netifaces (0.8-3build1) ...
+==> cpe3: Setting up python-setuptools (3.3-1ubuntu1) ...
+==> cpe3: Setting up python-pip (1.5.4-1) ...
+==> cpe3: Setting up contrail-nodemgr (2.0-22) ...
+==> cpe3: Setting up vlan (1.9-3ubuntu10) ...
+==> cpe3: Setting up python-iniparse (0.4-2.1build1) ...
+==> cpe3: Setting up contrail-setup (2.0-22) ...
+==> cpe3: utils/
+==> cpe3: utils/service_instance.py
+==> cpe3: utils/provision.py
+==> cpe3: utils/provision_encap.py
+==> cpe3: utils/provision_vgw_interface.py
+==> cpe3: utils/contrail-status.py
+==> cpe3: utils/create_floating_pool.py
+==> cpe3: utils/provision_vrouter.py
+==> cpe3: utils/config_db_obj_name_validate.py
+==> cpe3: utils/service-template.py
+==> cpe3: utils/del_route_target.py
+==> cpe3: utils/contrail_veth_port.py
+==> cpe3: utils/contrail-version
+==> cpe3: utils/multi_tenancy.py
+==> cpe3: utils/encap.py
+==> cpe3: utils/service-policy.py
+==> cpe3: utils/demo_cmds.sh
+==> cpe3: utils/provision_control.py
+==> cpe3: utils/service_template.py
+==> cpe3: utils/provision_linklocal.py
+==> cpe3: utils/service_policy.py
+==> cpe3: utils/use_floating_pool.py
+==> cpe3: utils/contrail-version-deb
+==> cpe3: utils/provision_static_route.py
+==> cpe3: utils/contrail_utils.py
+==> cpe3: utils/vncop.py
+==> cpe3: utils/cass-db-restore.sh
+==> cpe3: utils/del_projects.py
+==> cpe3: utils/config_db_obj_name_validate.sh
+==> cpe3: utils/contrail-config.py
+==> cpe3: utils/demo_cfg.py
+==> cpe3: utils/provision_bgp.py
+==> cpe3: utils/provision_forwarding_mode.py
+==> cpe3: utils/chmod.py
+==> cpe3: utils/cmd_wrapper.py
+==> cpe3: utils/SConscript
+==> cpe3: utils/net_policy_join.py
+==> cpe3: utils/service-instance.py
+==> cpe3: utils/contrail
+==> cpe3: utils/add_route_target.py
+==> cpe3: utils/provision_mx.py
+==> cpe3: SConscript
+==> cpe3: add_virtual_dns.py
+==> cpe3: add_virtual_dns_record.py
+==> cpe3: associate_virtual_dns.py
+==> cpe3: del_virtual_dns.py
+==> cpe3: del_virtual_dns_record.py
+==> cpe3: disassociate_virtual_dns.py
+==> cpe3: dns_add_cmds.sh
+==> cpe3: dns_del_cmds.sh
+==> cpe3: provision_dns.py
+==> cpe3: set_dns_nameserver.py
+==> cpe3: Processing triggers for ureadahead (0.100.0-16) ...
+==> cpe3: Setting up contrail-vrouter-agent (2.0-22) ...
+==> cpe3: supervisor-vrouter start/running, process 5916
+==> cpe3: Processing triggers for ureadahead (0.100.0-16) ...
+==> cpe3: Setting up python-contrail-vrouter-api (2.0-22) ...
+==> cpe3: Setting up python-opencontrail-vrouter-netns (2.0-22) ...
+==> cpe3: Setting up contrail-vrouter-dkms (2.0-22) ...
+==> cpe3: Creating symlink /var/lib/dkms/vrouter/2.0/source ->
+==> cpe3:                  /usr/src/vrouter-2.0
+==> cpe3: DKMS: add completed.
+==> cpe3: Kernel preparation unnecessary for this kernel.  Skipping...
+==> cpe3: Building module:
+==> cpe3: cleaning build area...
+==> cpe3: .
+==> cpe3: .
+==> cpe3: .
+==> cpe3: .
+==> cpe3: .
+==> cpe3: .
+==> cpe3: .
+==> cpe3: .
+==> cpe3: 'make' -C . KERNELDIR=/lib/modules/3.13.0-46-generic/build...
+==> cpe3: .
+==> cpe3: cleaning build area...
+==> cpe3: .
+==> cpe3: DKMS: build completed.
+==> cpe3: vrouter:
+==> cpe3: Running module version sanity check.
+==> cpe3:  - Original module
+==> cpe3:    - No original module exists within this kernel
+==> cpe3:  - Installation
+==> cpe3:    - Installing to /lib/modules/3.13.0-46-generic/updates/dkms/
+==> cpe3: depmod...
+==> cpe3: .
+==> cpe3: DKMS: install completed.
+==> cpe3: Setting up contrail-vrouter-init (2.0-22) ...
+==> cpe3: Running Postinst for contrail-vrouter-init
+==> cpe3: create the agent_param file...
+==> cpe3: Postinst for contrail-vrouter-init done
+==> cpe3: Processing triggers for libc-bin (2.19-0ubuntu6.6) ...
+==> cpe3: Processing triggers for ureadahead (0.100.0-16) ...
+==> cpe3: Setting discovery server
+==> cpe3: tap0: address 10.8.0.55 on subnet 10.8.0.0/24 with default gateway 10.8.0.1
+==> cpe3: adding vhost0 entry to /etc/network/interfaces
+==> cpe3: Reading package lists...
+==> cpe3: Building dependency tree...
+==> cpe3: Reading state information...
+==> cpe3: The following packages will be REMOVED:
+==> cpe3:   cloud-guest-utils* cloud-init*
+==> cpe3: 0 upgraded, 0 newly installed, 2 to remove and 16 not upgraded.
+==> cpe3: After this operation, 1,070 kB disk space will be freed.
+==> cpe3: (Reading database ... 64966 files and directories currently installed.)
+==> cpe3: Removing cloud-init (0.7.5-0ubuntu1.4) ...
+==> cpe3: Removing 'diversion of /etc/init/ureadahead.conf to /etc/init/ureadahead.conf.disabled by cloud-init'
+==> cpe3: Purging configuration files for cloud-init (0.7.5-0ubuntu1.4) ...
+==> cpe3: dpkg: warning: while removing cloud-init, directory '/etc/cloud' not empty so not removed
+==> cpe3: dpkg: warning: while removing cloud-init, directory '/var/lib/cloud' not empty so not removed
+==> cpe3: Removing cloud-guest-utils (0.27-0ubuntu9.1) ...
+==> cpe3: Processing triggers for man-db (2.6.7.1-1ubuntu1) ...
+==> cpe3: all done.
+==> cpe3: ***************************************************
+==> cpe3: *   PLEASE RELOAD THIS VAGRANT BOX BEFORE USE     *
+==> cpe3: ***************************************************
+mwiget-mba13:opencontrail-cpe3 mwiget$ vagrant ssh
+Welcome to Ubuntu 14.04.2 LTS (GNU/Linux 3.13.0-46-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com/
+
+ System information disabled due to load higher than 1.0
+
+  Get cloud support with Ubuntu Advantage Cloud Guest:
+    http://www.ubuntu.com/business/services/cloud
+
+
+
+vagrant@cpe3:~$ sudo reboot
+vagrant@cpe3:~$
+Broadcast message from vagrant@cpe3
+	(/dev/pts/1) at 19:25 ...
+
+The system is going down for reboot NOW!
+Connection to 127.0.0.1 closed by remote host.
+Connection to 127.0.0.1 closed.
+mwiget-mba13:opencontrail-cpe3 mwiget$
+
+
+
+mwiget-mba13:opencontrail-cpe3 mwiget$ vagrant ssh
+Welcome to Ubuntu 14.04.2 LTS (GNU/Linux 3.13.0-46-generic x86_64)
+
+ * Documentation:  https://help.ubuntu.com/
+
+  System information as of Sun Mar 22 19:25:41 UTC 2015
+
+  System load: 0.0               Memory usage: 6%   Processes:       84
+  Usage of /:  3.3% of 39.34GB   Swap usage:   0%   Users logged in: 0
+
+  Graph this data and manage this system at:
+    https://landscape.canonical.com/
+
+  Get cloud support with Ubuntu Advantage Cloud Guest:
+    http://www.ubuntu.com/business/services/cloud
+
+
+Last login: Sun Mar 22 19:25:27 2015 from 10.0.2.2
+vagrant@cpe3:~$ sudo bash
+root@cpe3:~# ping 192.168.100.10
+PING 192.168.100.10 (192.168.100.10) 56(84) bytes of data.
+64 bytes from 192.168.100.10: icmp_seq=1 ttl=62 time=60.7 ms
+^C
+--- 192.168.100.10 ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 60.766/60.766/60.766/0.000 ms
+root@cpe3:~# ping 192.168.0.3
+PING 192.168.0.3 (192.168.0.3) 56(84) bytes of data.
+^C
+--- 192.168.0.3 ping statistics ---
+2 packets transmitted, 0 received, 100% packet loss, time 1009ms
+
+root@cpe3:~# ip route
+default dev vgw  scope link
+5.9.31.84 via 10.0.2.2 dev eth0
+10.0.2.0/24 dev eth0  proto kernel  scope link  src 10.0.2.15
+10.8.0.0/24 dev vhost0  proto kernel  scope link  src 10.8.0.55
+128.0.0.0/1 via 10.8.0.1 dev tap0
+192.168.0.0/24 dev vgw  scope link
+192.168.2.0/24 dev eth1  proto kernel  scope link  src 192.168.2.1
+192.168.100.0/24 via 10.8.0.1 dev vhost0
+root@cpe3:~# ip route del 192.168.0.0/24 dev vgw
+root@cpe3:~# ip route add 192.168.0.0/24 dev vgw
+root@cpe3:~# ping 192.168.0.3
+PING 192.168.0.3 (192.168.0.3) 56(84) bytes of data.
+^C
+--- 192.168.0.3 ping statistics ---
+3 packets transmitted, 0 received, 100% packet loss, time 2016ms
+
+root@cpe3:~# contrail-status
+== Contrail vRouter ==
+supervisor-vrouter:           active
+contrail-vrouter-agent        active
+contrail-vrouter-nodemgr      active
+
+root@cpe3:~# tcpdump -n -i vgw
+tcpdump: WARNING: vgw: no IPv4 address assigned
+tcpdump: verbose output suppressed, use -v or -vv for full protocol decode
+listening on vgw, link-type EN10MB (Ethernet), capture size 65535 bytes
+^C
+0 packets captured
+0 packets received by filter
+0 packets dropped by kernel
+root@cpe3:~# ping 192.168.0.3
+PING 192.168.0.3 (192.168.0.3) 56(84) bytes of data.
+64 bytes from 192.168.0.3: icmp_seq=1 ttl=63 time=62.1 ms
+64 bytes from 192.168.0.3: icmp_seq=2 ttl=63 time=65.6 ms
+64 bytes from 192.168.0.3: icmp_seq=3 ttl=63 time=70.9 ms
+^C
+--- 192.168.0.3 ping statistics ---
+3 packets transmitted, 3 received, 0% packet loss, time 2005ms
+rtt min/avg/max/mdev = 62.178/66.277/70.968/3.624 ms
+root@cpe3:~# ifconfig -a
+eth0      Link encap:Ethernet  HWaddr 08:00:27:f1:9d:0f
+          inet addr:10.0.2.15  Bcast:10.0.2.255  Mask:255.255.255.0
+          inet6 addr: fe80::a00:27ff:fef1:9d0f/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:1143 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:1274 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000
+          RX bytes:161215 (161.2 KB)  TX bytes:344690 (344.6 KB)
+
+eth1      Link encap:Ethernet  HWaddr 08:00:27:e1:79:b6
+          inet addr:192.168.2.1  Bcast:192.168.2.255  Mask:255.255.255.0
+          inet6 addr: fe80::a00:27ff:fee1:79b6/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:1 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:10 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000
+          RX bytes:92 (92.0 B)  TX bytes:868 (868.0 B)
+
+lo        Link encap:Local Loopback
+          inet addr:127.0.0.1  Mask:255.0.0.0
+          inet6 addr: ::1/128 Scope:Host
+          UP LOOPBACK RUNNING  MTU:65536  Metric:1
+          RX packets:94 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:94 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0
+          RX bytes:10386 (10.3 KB)  TX bytes:10386 (10.3 KB)
+
+pkt0      Link encap:Ethernet  HWaddr fe:7c:4a:71:a5:5c
+          inet6 addr: fe80::fc7c:4aff:fe71:a55c/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:4 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:35 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:500
+          RX bytes:280 (280.0 B)  TX bytes:2650 (2.6 KB)
+
+pkt1      Link encap:UNSPEC  HWaddr A6-F2-AE-93-6F-BF-3A-34-00-00-00-00-00-00-00-00
+          [NO FLAGS]  MTU:65535  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0
+          RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
+
+pkt2      Link encap:UNSPEC  HWaddr 76-20-F7-47-BB-23-00-00-00-00-00-00-00-00-00-00
+          [NO FLAGS]  MTU:65535  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:0
+          RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
+
+tap0      Link encap:Ethernet  HWaddr c6:5d:02:50:a5:0c
+          inet addr:10.8.0.55  Bcast:10.8.0.255  Mask:255.255.255.0
+          inet6 addr: fe80::c45d:2ff:fe50:a50c/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:637 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:907 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:100
+          RX bytes:66315 (66.3 KB)  TX bytes:370357 (370.3 KB)
+
+vgw       Link encap:Ethernet  HWaddr 00:01:00:5e:00:00
+          inet6 addr: fe80::201:ff:fe5e:0/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:6 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:30 errors:0 dropped:9 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000
+          RX bytes:420 (420.0 B)  TX bytes:2678 (2.6 KB)
+
+vhost0    Link encap:Ethernet  HWaddr c6:5d:02:50:a5:0c
+          inet addr:10.8.0.55  Bcast:10.8.0.255  Mask:255.255.255.0
+          inet6 addr: fe80::c45d:2ff:fe50:a50c/64 Scope:Link
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:622 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:864 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000
+          RX bytes:65433 (65.4 KB)  TX bytes:368099 (368.0 KB)
+
+root@cpe3:~# ip route
+default dev vgw  scope link
+5.9.31.84 via 10.0.2.2 dev eth0
+10.0.2.0/24 dev eth0  proto kernel  scope link  src 10.0.2.15
+10.8.0.0/24 dev vhost0  proto kernel  scope link  src 10.8.0.55
+128.0.0.0/1 via 10.8.0.1 dev tap0
+192.168.0.0/24 dev vgw  scope link
+192.168.2.0/24 dev eth1  proto kernel  scope link  src 192.168.2.1
+192.168.100.0/24 via 10.8.0.1 dev vhost0
+root@cpe3:~#
