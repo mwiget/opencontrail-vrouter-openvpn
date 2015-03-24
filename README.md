@@ -4,29 +4,29 @@ opencontrail-vrouter-openvpn
 This is a proof-of-concept to create an opencontrail based vrouter that connects via SSL (OpenVPN tap interface) to a Contrail setup. 
 The provisioning of the OpenVPN server and Contrail server installation are out-of-scope for this write-up and assumedto be up and running prior to launching and provisioning the vagrant VM cpe3:
 
-                  +----------+
-                 +----------+|   Contrail UI/Discover/Config/Control
-                 | Contrail |+   Openstack Nova/neutron/glance etc
-                 +----+-----+    
-       192.168.100/24 |.10
-     ---+-------------+---
-        |.1
-+-------+--------+
-| OpenVPN Server |    OpenVPN server using tap interface and
-|  10.8.0.0/24   |    certificate based authentication. 
-+-------+--------+
-        |5.9.31.84
-        |
-  Public Internet
-        |
-     +--+--+
-     | NAT |  Optional FW/NAT offering private IP address to vrouter
-     +--+--+
-        |
- +=======+========+
- | OpenVPN client |   
- | cpe3 / vrouter |
- +================+
+                      +----------+
+                     +----------+|   Contrail UI/Discover/Config/Control
+                     | Contrail |+   Openstack Nova/neutron/glance etc
+                     +----+-----+    
+           192.168.100/24 |.10
+         ---+-------------+---
+            |.1
+    +-------+--------+
+    | OpenVPN Server |    OpenVPN server using tap interface and
+    |  10.8.0.0/24   |    certificate based authentication. 
+    +-------+--------+
+            |5.9.31.84
+            |
+      Public Internet
+            |
+         +--+--+
+         | NAT |  Optional FW/NAT offering private IP address to vrouter
+         +--+--+
+            |
+     +=======+========+
+     | OpenVPN client |   
+     | cpe3 / vrouter |
+     +================+
 
 "vagrant up " downloads Ubuntu 14.04 (ubuntu/trusty64) for the selected vagrant provider (Virtualbox, VMWare Fusion or kvm), installs OpenVPN client and Opencontrail 2.0 from the binary repository documented in the opencontrail quick start guide at http://www.opencontrail.org/opencontrail-quick-start-guide/.
 Finally a simple gateway is provisioned for a virtual network containing the CPE's hostname (cpe3 in the example). More about the simple gateway function can be found at https://github.com/Juniper/contrail-controller/wiki/Simple-Gateway
@@ -96,6 +96,8 @@ Bring up the virtual machine:
     ==> cpe3: *   PLEASE RELOAD THIS VAGRANT BOX BEFORE USE     *
     ==> cpe3: ***************************************************
 
+See file install.log for a complete log of a successful bringup and connection of cpe3 to a contrail node at 192.168.100.10.
+
 From here, please reboot the virtual machine in order for the vrouter kernel module to be loaded and configured correctly:
 
     $ vagrant reload
@@ -137,5 +139,4 @@ The vrouter cpe3 will show up in the Contrail UI dashboard, though complaining a
     python /opt/contrail/utils/provision_vrouter.py --host_name cpe3 --host_ip 10.8.0.51 --api_server_ip 192.168.100.10 --oper add --admin_user admin --admin_password secret123 --admin_tenant_name admin
 
 Even without adding this configuration to Contrail config, the vrouter is fully functional and the virtual network 'cpe3-lan' (see /etc/contrail/contrail-vrouter-agent.conf) useable.
-
 
