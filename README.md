@@ -140,3 +140,30 @@ The vrouter cpe3 will show up in the Contrail UI dashboard, though complaining a
 
 Even without adding this configuration to Contrail config, the vrouter is fully functional and the virtual network 'cpe3-lan' (see /etc/contrail/contrail-vrouter-agent.conf) useable.
 
+
+Packet header overhead in this particular setup:
+
+    14  Ethernet header
+    20  IPv4 header
+     4  GRE
+     4  MPLS
+    --
+    42 Bytes overhead
+
+Given an IP MTU of 1500 (1514 including Ethernet header), ICMP ping packets up to a payload packetsize of 1444 can be transmitted without fragmentation:
+
+    root@cpe2# tcpdump -n -i tap0 -e -vvv ip host 10.8.0.51
+    04:52:21.134489 da:09:23:48:34:fa > 46:b2:0e:46:8b:13, ethertype IPv4 (0x0800), length 1514: (tos 0x0, ttl 63, id 31796, offset 0, flags [none], proto GRE (47), length 1500)
+        192.168.100.10 > 10.8.0.51: GREv0, Flags [none], proto MPLS unicast (0x8847), length 1480
+            MPLS (label 17, exp 0, [S], ttl 63)
+            (tos 0x0, ttl 63, id 31796, offset 0, flags [DF], proto ICMP (1), length 1472)
+        192.168.0.3 > 10.0.2.15: ICMP echo request, id 24321, seq 0, length 1452
+    04:52:21.134540 46:b2:0e:46:8b:13 > da:09:23:48:34:fa, ethertype IPv4 (0x0800), length 1514: (tos 0x0, ttl 64, id 21155, offset 0, flags [none], proto GRE (47), length 1500)
+        10.8.0.51 > 192.168.100.10: GREv0, Flags [none], proto MPLS unicast (0x8847), length 1480
+            MPLS (label 17, exp 0, [S], ttl 63)
+            (tos 0x0, ttl 63, id 21155, offset 0, flags [none], proto ICMP (1), length 1472)
+        10.0.2.15 > 192.168.0.3: ICMP echo reply, id 24321, seq 0, length 1452
+
+
+
+
